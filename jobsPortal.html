@@ -29,7 +29,7 @@
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/datatables.net-fixedheader-bs5@3.4.0/css/fixedHeader.bootstrap5.min.css"
         rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 <style>
@@ -58,27 +58,28 @@
         overflow-wrap: break-word;
         vertical-align: top;
     }
-     @media (max-width: 576px) {
-    table td {
-      display: block;
-      width: 100% !important;
-      box-sizing: border-box;
-    }
 
-    table tr {
-      display: block;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #dee2e6;
-    }
+    @media (max-width: 576px) {
+        table td {
+            display: block;
+            width: 100% !important;
+            box-sizing: border-box;
+        }
 
-    table td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-      color: #555;
+        table tr {
+            display: block;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
     }
-  }
 </style>
 
 <body>
@@ -95,21 +96,21 @@
 
                 <!-- Start Navbar-Brand -->
                 <div class="navbar-logo-box">
-                    <a href="index.html" class="logo logo-dark">
+                    <a href="./index.html" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="logo-sm-dark" height="20">
+                            <img src="./assets/images/logo-sm.png" alt="logo-sm-dark" height="20">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="logo-dark" height="18">
+                            <img src="./assets/images/logo-dark.png" alt="logo-dark" height="18">
                         </span>
                     </a>
 
-                    <a href="index.html" class="logo logo-light">
+                    <a href="./index.html" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="logo-sm-light" height="20">
+                            <img src="./assets/images/logo-sm.png" alt="logo-sm-light" height="20">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="logo-light" height="18">
+                            <img src="./assets/images/logo-light.png" alt="logo-light" height="18">
                         </span>
                     </a>
 
@@ -423,7 +424,7 @@
                         <div class="dropdown d-inline-block">
                             <button type="button" class="btn btn-sm top-icon p-0" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded avatar-2xs p-0" src="assets/images/users/avatar-6.png"
+                                <img class="rounded avatar-2xs p-0" src="./assets/images/users/avatar-6.png"
                                     alt="Header Avatar">
                             </button>
                             <div
@@ -500,7 +501,7 @@
                     <!-- Left Menu Start -->
                     <ul class="left-menu list-unstyled" id="side-menu">
                         <li>
-                            <a href="index.html" class="">
+                            <a href="./index.html" class="">
                                 <i class="fas fa-desktop"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -910,56 +911,60 @@
 
                     <div class="row">
                         <div class="col-xl-3 bg-white p-3">
-<div class="conatiner ">
-          <h5 class="fw-bold text-info">Filter Search</h5>
-          <input type="text" class="form-control mb-2" placeholder="Looking for...">
-          <a href="#" class="d-block mb-2 text-info">Clear Title</a>
+                            <div class="conatiner ">
+                                <h5 class="fw-bold text-info">Filter Search</h5>
+                                <input type="text" class="form-control mb-2" placeholder="Looking for...">
+                                <a href="#" class="d-block mb-2 text-info">Clear Title</a>
 
-          <select class="form-select mb-2">
-            <option>Departments</option>
-          </select>
-          <a href="#" class="d-block mb-2 text-info">Clear Departments</a>
+                                <select class="form-select mb-2">
+                                    <option>Departments</option>
 
-          <select class="form-select mb-2">
-            <option>Location</option>
-          </select>
-          <a href="#" class="d-block mb-2 text-info">Clear Location</a>
 
-          <button class="btn btn-primary w-100 mb-4">Search</button>
+                                            <option>Departments</option>        <option>Departments</option>        <option>Departments</option>
+                                </select>
+                                <a href="#" class="d-block mb-2 text-info">Clear Departments</a>
 
-          <h6 class="fw-bold">By Industry</h6>
-          <ul class="list-unstyled small">
-            <li>Punjab Wildlife and Parks (1)</li>
-            <li>Punjab Govt. (9)</li>
-            <li>Education/Training (13)</li>
-            <li>Punjab Education Initiatives (6)</li>
-            <li>Information Technology (53)</li>
-          
-          </ul>
+                                <select class="form-select mb-2">
+                                    <option>Location</option>
+                                             <option>Location</option>         <option>Location</option>         <option>Location</option>         <option>Location</option>
+                                </select>
+                                <a href="#" class="d-block mb-2 text-info">Clear Location</a>
 
-          <h6 class="fw-bold mt-4">Type of Contract</h6>
-          <div class="form-check small">
-            <input type="checkbox" class="form-check-input"> Part Time <br>
-            <input type="checkbox" class="form-check-input"> Full Time <br>
-            <input type="checkbox" class="form-check-input"> Daily Wages <br>
-            <input type="checkbox" class="form-check-input"> Permanent <br>
-            <input type="checkbox" class="form-check-input"> Regular <br>
-            <input type="checkbox" class="form-check-input"> Contract <br>
-            <input type="checkbox" class="form-check-input"> Contingency <br>
-            <input type="checkbox" class="form-check-input"> Adhoc Basis
-          </div>
-      
-    <button class="btn btn-primary btn-sm mt-2">Clear All</button>
-          <div class="form-check small">
-            <input type="radio" name="career" class="form-check-input"> Student/Internship <br>
-            <input type="radio" name="career" class="form-check-input"> Entry Level <br>
-            <input type="radio" name="career" class="form-check-input"> Mid Career <br>
-            <input type="radio" name="career" class="form-check-input"> Management <br>
-            <input type="radio" name="career" class="form-check-input"> Executive/Director <br>
-            <input type="radio" name="career" class="form-check-input"> Senior Management
-          </div>
-          <button class="btn btn-primary btn-sm mt-2">Clear All</button>
-        </div>
+                                <button class="btn btn-primary w-100 mb-4">Search</button>
+
+                                <h6 class="fw-bold">By Industry</h6>
+                                <ul class="list-unstyled small">
+                                    <li>Punjab Wildlife and Parks (1)</li>
+                                    <li>Punjab Govt. (9)</li>
+                                    <li>Education/Training (13)</li>
+                                    <li>Punjab Education Initiatives (6)</li>
+                                    <li>Information Technology (53)</li>
+
+                                </ul>
+
+                                <h6 class="fw-bold mt-4">Type of Contract</h6>
+                                <div class="form-check small">
+                                    <input type="checkbox" class="form-check-input"> Part Time <br>
+                                    <input type="checkbox" class="form-check-input"> Full Time <br>
+                                    <input type="checkbox" class="form-check-input"> Daily Wages <br>
+                                    <input type="checkbox" class="form-check-input"> Permanent <br>
+                                    <input type="checkbox" class="form-check-input"> Regular <br>
+                                    <input type="checkbox" class="form-check-input"> Contract <br>
+                                    <input type="checkbox" class="form-check-input"> Contingency <br>
+                                    <input type="checkbox" class="form-check-input"> Adhoc Basis
+                                </div>
+
+                                <button class="btn btn-primary btn-sm mt-2">Clear All</button>
+                                <div class="form-check small">
+                                    <input type="radio" name="career" class="form-check-input"> Student/Internship <br>
+                                    <input type="radio" name="career" class="form-check-input"> Entry Level <br>
+                                    <input type="radio" name="career" class="form-check-input"> Mid Career <br>
+                                    <input type="radio" name="career" class="form-check-input"> Management <br>
+                                    <input type="radio" name="career" class="form-check-input"> Executive/Director <br>
+                                    <input type="radio" name="career" class="form-check-input"> Senior Management
+                                </div>
+                                <button class="btn btn-primary btn-sm mt-2">Clear All</button>
+                            </div>
                         </div>
 
 
@@ -970,7 +975,7 @@
                                         <div class="table-responsive">
                                             <table id="selection-datatable" class="bg-secondary-subtle"
                                                 class="table dt-responsive nowrap  border-0 ">
-                                                <thead >
+                                                <thead>
                                                     <tr>
                                                         <th>Jobs Title</th>
                                                         <th>Departement</th>
@@ -998,12 +1003,13 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                   
-                                                      <tr>
+
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1019,11 +1025,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1039,11 +1046,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1059,11 +1067,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1079,11 +1088,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1099,11 +1109,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1119,11 +1130,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1139,11 +1151,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1159,11 +1172,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1179,11 +1193,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1199,11 +1214,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1219,11 +1235,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1239,11 +1256,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1259,11 +1277,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1279,11 +1298,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1299,11 +1319,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1319,11 +1340,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1339,11 +1361,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1359,11 +1382,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1379,11 +1403,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1399,11 +1424,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1419,11 +1445,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1439,11 +1466,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1459,11 +1487,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1479,11 +1508,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                     <tr>
+                                                    <tr>
                                                         <td>
                                                             <a href="" class="text-info "
                                                                 style="font-weight: 500; opacity: 0.5;">Company
@@ -1499,11 +1529,12 @@
                                                         <td>PUNJAB</td>
                                                         <td>15-Aug-2025</td>
                                                         <td class="d-flex gap-1">
-                                                            <small class="btn btn-primary text-white">   <i class="ri-printer-line"></i></small>
+                                                            <small class="btn btn-primary text-white"> <i
+                                                                    class="ri-printer-line"></i></small>
                                                             <small class="btn btn-primary">Apply</small>
                                                         </td>
                                                     </tr>
-                                                   
+
                                                     <!-- Add more rows here -->
                                                 </tbody>
                                             </table>
