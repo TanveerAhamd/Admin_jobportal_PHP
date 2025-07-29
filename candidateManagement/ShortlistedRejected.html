@@ -404,76 +404,166 @@
         <!-- Start right Content here -->
         <div class="main-content">
             <div class="page-content">
-                <div class="container mt-2">
-                    <h2 class="mb-2 text-success">Shortlist / Reject Candidates</h2>
-                    <div class="mb-3 d-flex align-items-end justify-content-end gap-1">
-                        <button class="btn btn-success btn-sm">Shortlist Selected</button>
-                        <button class="btn btn-danger btn-sm">Reject Selected</button>
-                    </div>
+             <div class="container mt-2">
+    <h2 class="mb-2 text-success">Shortlist / Reject Candidates</h2>
+    <div class="mb-3 d-flex align-items-end justify-content-end gap-1">
+        <button class="btn btn-success btn-sm">Shortlist Selected</button>
+        <button class="btn btn-danger btn-sm">Reject Selected</button>
+    </div>
 
-                    <table id="jobsTable" class="table table-bordered table-hover table-striped">
-                        <thead class="table-primary">
-                            <tr>
-                                <th><input type="checkbox"></th>
-                                <th>Name</th>
-                                <th>Job</th>
-                                <th>Score</th>
-                                <th>Status</th>
-                                <th>Note</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                             <tr>
-                                <td><input type="checkbox"></td>
-                                <td>Ali Khan</td>
-                                <td>Web Developer</td>
-                                <td>85%</td>
-                                <td>Pending</td>
-                                <td><input type="text" class="form-control" placeholder="Add note"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <table id="jobsTable" class="table table-bordered table-hover table-striped">
+        <thead class="table-primary">
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Score</th>
+                <th>Status</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat rows -->
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>Ali Khan</td>
+                <td>Web Developer</td>
+                <td>85%</td>
+                <td>Pending</td>
+                <td>
+                    <div class="input-group">
+                        <input type="text" class="form-control note-input" placeholder="Add note">
+                        <button class="btn btn-outline-success btn-sm save-note" type="button">Save</button>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- You can duplicate this row for other candidates -->
+        </tbody>
+    </table>
+</div>
+
 
                 <!-- Footer -->
                 <footer class="footer">
@@ -540,7 +630,7 @@
         <script>
             $(document).ready(function () {
                 $('#jobsTable').DataTable({
-                    "pageLength": 8
+                    "pageLength": 7
                 });
             });
         </script>
